@@ -1,0 +1,14 @@
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\bin\Debug\net6.0\Hospital.Repositories.deps.json
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\bin\Debug\net6.0\Hospital.Repositories.runtimeconfig.json
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\bin\Debug\net6.0\Hospital.Repositories.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\bin\Debug\net6.0\Hospital.Repositories.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.csproj.AssemblyReference.cache
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.AssemblyInfoInputs.cache
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.AssemblyInfo.cs
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\refint\Hospital.Repositories.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\Hospital.Repositories.genruntimeconfig.cache
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Repositories\obj\Debug\net6.0\ref\Hospital.Repositories.dll
