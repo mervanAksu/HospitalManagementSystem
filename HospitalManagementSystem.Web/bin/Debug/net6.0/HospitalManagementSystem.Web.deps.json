@@ -9,11 +9,12 @@
       "HospitalManagementSystem.Web/1.0.0": {
         "dependencies": {
           "Hospital.Repositories": "1.0.0",
+          "Hospital.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
-          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.25",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.23",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.23",
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.25",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
         },
         "runtime": {
@@ -617,15 +618,15 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/6.0.23": {
+      "Microsoft.AspNetCore.Identity.UI/6.0.25": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.23",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.25",
           "Microsoft.Extensions.Identity.Stores": "6.0.25"
         },
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Identity.UI.dll": {
-            "assemblyVersion": "6.0.23.0",
-            "fileVersion": "6.0.2323.48007"
+            "assemblyVersion": "6.0.25.0",
+            "fileVersion": "6.0.2523.52315"
           }
         }
       },
@@ -1207,15 +1208,15 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.25": {},
-      "Microsoft.EntityFrameworkCore.Design/6.0.23": {
+      "Microsoft.EntityFrameworkCore.Design/6.0.25": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.25"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.23.0",
-            "fileVersion": "6.0.2323.47715"
+            "assemblyVersion": "6.0.25.0",
+            "fileVersion": "6.0.2523.52312"
           }
         }
       },
@@ -1262,9 +1263,9 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.23": {
+      "Microsoft.EntityFrameworkCore.Tools/6.0.25": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.23"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.25"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -1325,14 +1326,14 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.23": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.25": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.2323.48007"
+            "fileVersion": "6.0.2523.52315"
           }
         }
       },
@@ -2744,13 +2745,34 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Hospital.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25"
+        },
+        "runtime": {
+          "Hospital.Models.dll": {}
+        }
+      },
       "Hospital.Repositories/1.0.0": {
         "dependencies": {
+          "Hospital.Models": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
         },
         "runtime": {
           "Hospital.Repositories.dll": {}
+        }
+      },
+      "Hospital.Utilities/1.0.0": {
+        "dependencies": {
+          "Hospital.Models": "1.0.0",
+          "Hospital.Repositories": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.25",
+          "Microsoft.Extensions.Identity.Stores": "6.0.25"
+        },
+        "runtime": {
+          "Hospital.Utilities.dll": {}
         }
       }
     }
@@ -3153,12 +3175,12 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/6.0.25",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.6.0.25.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Identity.UI/6.0.23": {
+    "Microsoft.AspNetCore.Identity.UI/6.0.25": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ud1WmdsnFqnijQEb4W2U/Djhvbe7C31pSDBabuivRZFjb/7b1T5RcQdMmvE/DJ9Tac+cOdSURGcWk4vp0sRd7Q==",
-      "path": "microsoft.aspnetcore.identity.ui/6.0.23",
-      "hashPath": "microsoft.aspnetcore.identity.ui.6.0.23.nupkg.sha512"
+      "sha512": "sha512-UcFxaIYAbi7ihg/Zmja0H8etGOTReK5spBVhlbWQhKK3vkOxJWYoDL7lFSJ1tQKUQVl/WHTwKN++MG1DeWrZbw==",
+      "path": "microsoft.aspnetcore.identity.ui/6.0.25",
+      "hashPath": "microsoft.aspnetcore.identity.ui.6.0.25.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "type": "package",
@@ -3321,12 +3343,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.25",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.25.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.23": {
+    "Microsoft.EntityFrameworkCore.Design/6.0.25": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TWyK4ymmvQefroVAlEmM+uzbvwQAo8XQ1AENAvsex10J595D33o+RLfvx74upYWx2QlBLGCOHR786T9KovAQqw==",
-      "path": "microsoft.entityframeworkcore.design/6.0.23",
-      "hashPath": "microsoft.entityframeworkcore.design.6.0.23.nupkg.sha512"
+      "sha512": "sha512-YawyMKj1f+GkwHrxMIf9tX84sMGgLFa5YoRmyuUugGhffiubkVLYIrlm4W0uSy2NzX4t6+V7keFLQf7lRQvDmA==",
+      "path": "microsoft.entityframeworkcore.design/6.0.25",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.25.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.25": {
       "type": "package",
@@ -3356,12 +3378,12 @@
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.25",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.25.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.23": {
+    "Microsoft.EntityFrameworkCore.Tools/6.0.25": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SHxDbhoNuomnHaIppyjeEjOhT030DDwtMZsnIxRo6kBdFEv8eFwJtl6c+8a91V9nWm9YMNIoWNqlWkvw+JfuUA==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.23",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.23.nupkg.sha512"
+      "sha512": "sha512-2iPMR+DHXh2Xn9qoJ0ejzdHblpns73e1pZ/pyRbYDQi0HPJyq1/pTYDda1owJ5W2lxAGDg8l5Fl1jVp97fTR1g==",
+      "path": "microsoft.entityframeworkcore.tools/6.0.25",
+      "hashPath": "microsoft.entityframeworkcore.tools.6.0.25.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",
@@ -3412,12 +3434,12 @@
       "path": "microsoft.extensions.fileproviders.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Embedded/6.0.23": {
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.25": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z1tdhh0ro8v11pkRXR1llOTt+SGWP8Wi780oLQGIDcmwx6EMQCbgq5RghnIQOtShlTHWkEGeyVBbBUsbxdMb0A==",
-      "path": "microsoft.extensions.fileproviders.embedded/6.0.23",
-      "hashPath": "microsoft.extensions.fileproviders.embedded.6.0.23.nupkg.sha512"
+      "sha512": "sha512-q1S6iVA2+kvwuSt21zcjKLzQDGTyMwVlEGhucOu8xNIQiHjcvWrKHtwlBIJzIE1EIcxQL/4w3iQw9W665i5WdQ==",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.25",
+      "hashPath": "microsoft.extensions.fileproviders.embedded.6.0.25.nupkg.sha512"
     },
     "Microsoft.Extensions.Identity.Core/6.0.25": {
       "type": "package",
@@ -4378,7 +4400,17 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "Hospital.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hospital.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hospital.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

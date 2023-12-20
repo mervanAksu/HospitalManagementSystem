@@ -12,9 +12,9 @@ namespace Hospital.Utilities
 {
 	public class DbInitializer : IDbInitializer
 	{
-		private UserManager<IdentityUser> _userManager;
-		private RoleManager<IdentityRole> _roleManager;
-		private ApplicationDbContext _context;
+		private readonly UserManager<IdentityUser> _userManager;
+		private readonly RoleManager<IdentityRole> _roleManager;
+		private readonly ApplicationDbContext _context;
 
 		public DbInitializer(UserManager<IdentityUser> userManager, 
 			RoleManager<IdentityRole> roleManager, 
@@ -29,7 +29,7 @@ namespace Hospital.Utilities
 		{
 			try
 			{
-				if (_context.Database.GetPendingMigrations().Count() > 0)
+				if (_context.Database.GetPendingMigrations().Any()) // Count() > 0 kullanılabilirdi fakat Any() daha performanslı
 				{
                     _context.Database.Migrate();
                 }
@@ -50,7 +50,7 @@ namespace Hospital.Utilities
 					UserName = "Mervan",
 					Email = "mervan.aksu@ogr.sakarya.edu.tr"
 				}, "Mervan@123").GetAwaiter().GetResult();
-				var Appuser = _context.ApplicationUsers.FirstOrDefault(x => x.Email== "mervan.aksu@ogr.sakarya.edu.tr");
+				var Appuser = _context.ApplicationUsers.FirstOrDefault(x => x.Email == "mervan.aksu@ogr.sakarya.edu.tr");
 				if (Appuser != null)
 				{
 					_userManager.AddToRoleAsync(Appuser, WebSiteRoles.WebSite_Admin).GetAwaiter().GetResult();

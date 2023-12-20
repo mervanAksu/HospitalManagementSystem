@@ -680,11 +680,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/6.0.23": {
+      "Microsoft.AspNetCore.Identity.UI/6.0.25": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.23",
-          "Microsoft.Extensions.Identity.Stores": "6.0.23"
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.25",
+          "Microsoft.Extensions.Identity.Stores": "6.0.25"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Identity.UI.dll": {
@@ -1389,11 +1389,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/6.0.23": {
+      "Microsoft.EntityFrameworkCore.Design/6.0.25": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.23"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.25"
         },
         "compile": {
           "lib/net6.0/_._": {
@@ -1474,10 +1474,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.23": {
+      "Microsoft.EntityFrameworkCore.Tools/6.0.25": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.23"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.25"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -1613,7 +1613,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.23": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.25": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -4078,10 +4078,24 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Hospital.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Models.dll": {}
+        }
+      },
       "Hospital.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Hospital.Models": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
         },
@@ -4090,6 +4104,23 @@
         },
         "runtime": {
           "bin/placeholder/Hospital.Repositories.dll": {}
+        }
+      },
+      "Hospital.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hospital.Models": "1.0.0",
+          "Hospital.Repositories": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.25",
+          "Microsoft.Extensions.Identity.Stores": "6.0.25"
+        },
+        "compile": {
+          "bin/placeholder/Hospital.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hospital.Utilities.dll": {}
         }
       }
     }
@@ -4940,10 +4971,10 @@
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Identity.UI/6.0.23": {
-      "sha512": "ud1WmdsnFqnijQEb4W2U/Djhvbe7C31pSDBabuivRZFjb/7b1T5RcQdMmvE/DJ9Tac+cOdSURGcWk4vp0sRd7Q==",
+    "Microsoft.AspNetCore.Identity.UI/6.0.25": {
+      "sha512": "UcFxaIYAbi7ihg/Zmja0H8etGOTReK5spBVhlbWQhKK3vkOxJWYoDL7lFSJ1tQKUQVl/WHTwKN++MG1DeWrZbw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.identity.ui/6.0.23",
+      "path": "microsoft.aspnetcore.identity.ui/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4958,7 +4989,7 @@
         "buildTransitive/Microsoft.AspNetCore.Identity.UI.targets",
         "lib/net6.0/Microsoft.AspNetCore.Identity.UI.dll",
         "lib/net6.0/Microsoft.AspNetCore.Identity.UI.xml",
-        "microsoft.aspnetcore.identity.ui.6.0.23.nupkg.sha512",
+        "microsoft.aspnetcore.identity.ui.6.0.25.nupkg.sha512",
         "microsoft.aspnetcore.identity.ui.nuspec",
         "staticwebassets/V4/css/site.css",
         "staticwebassets/V4/favicon.ico",
@@ -5846,10 +5877,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.23": {
-      "sha512": "TWyK4ymmvQefroVAlEmM+uzbvwQAo8XQ1AENAvsex10J595D33o+RLfvx74upYWx2QlBLGCOHR786T9KovAQqw==",
+    "Microsoft.EntityFrameworkCore.Design/6.0.25": {
+      "sha512": "YawyMKj1f+GkwHrxMIf9tX84sMGgLFa5YoRmyuUugGhffiubkVLYIrlm4W0uSy2NzX4t6+V7keFLQf7lRQvDmA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/6.0.23",
+      "path": "microsoft.entityframeworkcore.design/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5857,7 +5888,7 @@
         "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.6.0.23.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.6.0.25.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -5916,17 +5947,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.23": {
-      "sha512": "SHxDbhoNuomnHaIppyjeEjOhT030DDwtMZsnIxRo6kBdFEv8eFwJtl6c+8a91V9nWm9YMNIoWNqlWkvw+JfuUA==",
+    "Microsoft.EntityFrameworkCore.Tools/6.0.25": {
+      "sha512": "2iPMR+DHXh2Xn9qoJ0ejzdHblpns73e1pZ/pyRbYDQi0HPJyq1/pTYDda1owJ5W2lxAGDg8l5Fl1jVp97fTR1g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/6.0.23",
+      "path": "microsoft.entityframeworkcore.tools/6.0.25",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.6.0.23.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.6.0.25.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -6090,10 +6121,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Embedded/6.0.23": {
-      "sha512": "Z1tdhh0ro8v11pkRXR1llOTt+SGWP8Wi780oLQGIDcmwx6EMQCbgq5RghnIQOtShlTHWkEGeyVBbBUsbxdMb0A==",
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.25": {
+      "sha512": "q1S6iVA2+kvwuSt21zcjKLzQDGTyMwVlEGhucOu8xNIQiHjcvWrKHtwlBIJzIE1EIcxQL/4w3iQw9W665i5WdQ==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.embedded/6.0.23",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6108,7 +6139,7 @@
         "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
-        "microsoft.extensions.fileproviders.embedded.6.0.23.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.6.0.25.nupkg.sha512",
         "microsoft.extensions.fileproviders.embedded.nuspec",
         "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
@@ -11462,20 +11493,31 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Hospital.Models/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Models/Hospital.Models.csproj",
+      "msbuildProject": "../Hospital.Models/Hospital.Models.csproj"
+    },
     "Hospital.Repositories/1.0.0": {
       "type": "project",
       "path": "../Hospital.Repositories/Hospital.Repositories.csproj",
       "msbuildProject": "../Hospital.Repositories/Hospital.Repositories.csproj"
+    },
+    "Hospital.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Hospital.Utilities/Hospital.Utilities.csproj",
+      "msbuildProject": "../Hospital.Utilities/Hospital.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hospital.Repositories >= 1.0.0",
+      "Hospital.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.25",
-      "Microsoft.AspNetCore.Identity.UI >= 6.0.23",
+      "Microsoft.AspNetCore.Identity.UI >= 6.0.25",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.23",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.23",
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.25",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16"
     ]
   },
@@ -11508,6 +11550,9 @@
           "projectReferences": {
             "C:\\Users\\mrvnn\\OneDrive\\Masaüstü\\HospitalManagementSystem\\Hospital.Repositories\\Hospital.Repositories.csproj": {
               "projectPath": "C:\\Users\\mrvnn\\OneDrive\\Masaüstü\\HospitalManagementSystem\\Hospital.Repositories\\Hospital.Repositories.csproj"
+            },
+            "C:\\Users\\mrvnn\\OneDrive\\Masaüstü\\HospitalManagementSystem\\Hospital.Utilities\\Hospital.Utilities.csproj": {
+              "projectPath": "C:\\Users\\mrvnn\\OneDrive\\Masaüstü\\HospitalManagementSystem\\Hospital.Utilities\\Hospital.Utilities.csproj"
             }
           }
         }
@@ -11528,7 +11573,7 @@
           },
           "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
-            "version": "[6.0.23, )"
+            "version": "[6.0.25, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -11542,7 +11587,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[6.0.23, )"
+            "version": "[6.0.25, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
