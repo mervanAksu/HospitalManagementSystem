@@ -9,3 +9,13 @@ C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\ob
 C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\obj\Debug\net6.0\refint\Hospital.Services.dll
 C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\obj\Debug\net6.0\Hospital.Services.pdb
 C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\obj\Debug\net6.0\ref\Hospital.Services.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\obj\Debug\net6.0\Hospital.Services.csproj.AssemblyReference.cache
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Models.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Repositories.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Utilities.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.ViewModels.dll
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Utilities.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.ViewModels.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Models.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\bin\Debug\net6.0\Hospital.Repositories.pdb
+C:\Users\mrvnn\OneDrive\Masaüstü\HospitalManagementSystem\Hospital.Services\obj\Debug\net6.0\Hospital.Services.csproj.CopyComplete

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hospital.Models
 {
@@ -17,7 +18,9 @@ namespace Hospital.Models
         public DateTime? DOB { get; set; } // DOB = Date of Birth - Dogum Tarihi
         public string? Specialist { get; set; } // Uzmanlık - uzman
         public Department? Department { get; set; }
+        [NotMapped]
         public ICollection<Appointment>? Appointments { get; set; }
+        [NotMapped]
         public ICollection<Payroll>? Payrolls { get; set; } // Payroll - Maaş Bordrosu
     }
 }
