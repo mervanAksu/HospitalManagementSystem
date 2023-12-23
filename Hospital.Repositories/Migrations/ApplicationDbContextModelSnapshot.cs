@@ -410,6 +410,9 @@ namespace Hospital.Repositories.Migrations
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("HospitalId");
@@ -690,6 +693,9 @@ namespace Hospital.Repositories.Migrations
 
                     b.Property<int?>("Gender")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDoctor")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

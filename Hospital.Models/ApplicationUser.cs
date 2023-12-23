@@ -17,6 +17,7 @@ namespace Hospital.Models
         public string? Address { get; set; }
         public DateTime? DOB { get; set; } // DOB = Date of Birth - Dogum Tarihi
         public string? Specialist { get; set; } // Uzmanlık - uzman
+        public bool IsDoctor { get; set; }
         public Department? Department { get; set; }
         [NotMapped]
         public ICollection<Appointment>? Appointments { get; set; }
