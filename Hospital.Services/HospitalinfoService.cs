@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.Services
 {
-	public class HospitalinfoService : IHospitalinfo
+	public class HospitalinfoService : IHospitalInfo
 	{
 		private IUnitOfWork _unitOfWork;
 

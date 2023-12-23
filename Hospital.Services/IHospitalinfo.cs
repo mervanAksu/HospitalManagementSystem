@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.Services
 {
-	public interface IHospitalinfo
+	public interface IHospitalInfo
 	{
 		PagedResult<HospitalInfoViewModel> GetAll(int pageNumber, int pageSize);
 		HospitalInfoViewModel GetHospitalById(int HospitalId);
